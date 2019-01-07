@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.AtButton{
+    width:150px;
+    height:60px;
+    border-radius:10px;
+    background: #6290E7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    cursor:default;
+    user-select: none;
+    &.secondary{
+        background: white;
+        border:1px solid #6290E7;
+        color:#6290E7;
+        &.down{
+            border-color:#A1BDF1;
+            color:#A1BDF1;
+        }
+        &.disabled{
+            border-color:#D0DEF8;
+            color:#D0DEF8;
+        }
+    }
+    &.disabled{
+        background: #D0DEF8;
+    }
+    &.down{
+        background: #A1BDF1;
+    }
+}
